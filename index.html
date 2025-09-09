@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Interactive Web Experience</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <h1>Interactive Web Experience</h1>
+        <div class="theme-toggle">
+            <span>Light Mode</span>
+            <label class="toggle-switch">
+                <input type="checkbox" id="theme-toggle">
+                <span class="slider"></span>
+            </label>
+            <span>Dark Mode</span>
+        </div>
+    </header>
+
+    <main>
+        <section class="animation-demo">
+            <h2>CSS Animation Showcase</h2>
+            <p>Click buttons to trigger different animations on the box below:</p>
+            
+            <div class="animation-controls">
+                <button id="fade-btn">Fade In</button>
+                <button id="slide-btn">Slide In</button>
+                <button id="pulse-btn">Pulse</button>
+                <button id="bounce-btn">Bounce</button>
+                <button id="spin-btn">Spin</button>
+                <button id="flip-btn">Flip</button>
+                <button id="reset-anim-btn">Reset</button>
+            </div>
+            
+            <div class="animation-target" id="anim-target">
+                Animate Me!
+            </div>
+        </section>
+
+        <section class="card-flip">
+            <h2>Card Flip Animation</h2>
+            <p>Click on the card to flip it:</p>
+            
+            <div class="card-container">
+                <div class="card" id="flip-card">
+                    <div class="card-front">
+                        Front
+                    </div>
+                    <div class="card-back">
+                        Back
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="counter-game">
+            <h2>Counter Game</h2>
+            <p>Click the buttons to change the counter value. Try to get exactly 10!</p>
+            <div class="counter-value" id="counter">0</div>
+            <div class="game-buttons">
+                <button id="increment">Increment (+1)</button>
+                <button id="decrement">Decrement (-1)</button>
+                <button id="reset">Reset</button>
+            </div>
+            <p id="game-message"></p>
+        </section>
+
+        <section class="loader-section">
+            <h2>Loading Animation</h2>
+            <p>Control the loading animation with these buttons:</p>
+            
+            <div class="game-buttons">
+                <button id="start-loader">Start Loading</button>
+                <button id="stop-loader">Stop Loading</button>
+            </div>
+            
+            <div class="loader" id="loader"></div>
+        </section>
+
+        <section class="modal-section">
+            <h2>Modal Animation</h2>
+            <p>Click the button to open a modal with animation:</p>
+            
+            <button id="open-modal">Open Modal</button>
+            
+            <div class="modal" id="modal">
+                <div class="modal-content">
+                    <span class="close-modal" id="close-modal">&times;</span>
+                    <h3>Animated Modal</h3>
+                    <p>This modal appears with a smooth slide-in animation!</p>
+                </div>
+            </div>
+        </section>
+
+        <section class="form-section">
+            <h2>Form Validation</h2>
+            <form id="user-form">
+                <div class="form-group">
+                    <label for="name">Full Name</label>
+                    <input type="text" id="name" placeholder="Enter your full name">
+                    <div class="error" id="name-error">Please enter a valid name (min 2 characters)</div>
+                </div>
+                
+                <div class="form-group">
+                    <label for="email">Email Address</label>
+                    <input type="email" id="email" placeholder="Enter your email">
+                    <div class="error" id="email-error">Please enter a valid email address</div>
+                </div>
+                
+                <div class="form-group">
+                    <label for="password">Password</label>
+                    <input type="password" id="password" placeholder="Enter your password">
+                    <div class="error" id="password-error">Password must be at least 8 characters with uppercase, lowercase, and number</div>
+                </div>
+                
+                <button type="submit">Submit</button>
+            </form>
+            <div class="success-message" id="success-message">
+                Form submitted successfully!
+            </div>
+        </section>
+    </main>
+
+    <script src="script.js"></script>
+</body>
+</html>
